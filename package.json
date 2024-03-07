@@ -1,11 +1,11 @@
 {
-  "name": "my-store",
+  "name": "18_curso_node_autho",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "nodemon ./api/index.js",
+    "start": "node ./api/index.js",
     "lint": "eslint",
     "migrations:generate": "sequelize-cli migration:generate --name",
     "migrations:run": "sequelize-cli db:migrate",
@@ -16,26 +16,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.1",
-    "nodemon": "^2.0.12",
-    "prettier": "^2.3.2"
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5"
   },
   "dependencies": {
-    "@faker-js/faker": "^7.6.0",
     "@hapi/boom": "^9.1.4",
+    "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "joi": "^17.4.2",
-    "mysql2": "^2.3.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "joi": "^17.12.1",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
-    "sequelize": "^6.6.5",
-    "sequelize-cli": "^6.2.0"
-  },
-  "engines": {
-    "node": "14.x"
+    "sequelize": "^6.37.1",
+    "sequelize-cli": "^6.6.2"
   }
 }
