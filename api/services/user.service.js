@@ -12,7 +12,7 @@ class UserService {
       ...data,
       password: hash
       });
-      delete newUser.dataValues.password;
+    delete newUser.dataValues.password;
     return newUser;
   }
 
